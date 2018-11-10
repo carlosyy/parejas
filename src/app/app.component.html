@@ -1,11 +1,22 @@
-<div class="container py-5 bg-faded">
-  <!-- Content here -->
+<div class="container py-5 bg-faded">  
   <div class="card-columns">
     <div class="card text-right animated fadeIn fast" *ngFor="let c of itemsArray; let i = index">
       <div class="card-body" (click)="clickItem(c)">
-        <img class="card-img-left" [src]="c.imgBase" alt="Card image cap">
-        <h4 class="card-title">{{c.nombreItem}}</h4>
+        <img class="card-img-top img-fluid" [src]="c.imgBase" alt="Card image cap">        
       </div>
     </div>
   </div>
 </div>
+<!-- <div class="row">
+  <div class="container py-5 bg-faded">
+    <div class="col-md-4 col-md-offset-4">
+      <div class="card-columns">
+        <div class="card text-right animated fadeIn fast" *ngFor="let c of itemsArray; let i = index">
+          <div class="card-body" (click)="clickItem(c)">
+            <img class="card-img-top img-fluid" [src]="c.imgBase" alt="Card image cap">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
